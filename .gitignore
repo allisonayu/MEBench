@@ -1,0 +1,10 @@
+# Python virtual environments
+main_env/
+trans_env/
+
+# Other common files to ignore (optional, but good practice)
+__pycache__/
+*.pyc
+*.log
+.vscode/ # VS Code specific
+.env
