@@ -10,12 +10,12 @@ from configparser import ConfigParser
 class Config:
     def __init__(self):
         # OpenRouter Configuration
-        self.OPENROUTER_API_KEY = "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"
-        self.OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
+        self.OPENROUTER_API_KEY = ""
+        self.OPENROUTER_URL = ""
         
         # Gemini Configuration
-        self.GEMINI_API_KEY = "AIzaSyBq7IquYp7E7SqiuN7ZF8Fibw1SMZ1b3es"
-        self.GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent"
+        self.GEMINI_API_KEY = ""
+        self.GEMINI_URL = ""
         
         # Translation
         self.translator = Translator()
@@ -164,7 +164,7 @@ def main():
     
     # File paths
     input_file = os.path.join('q_translations', 'moral_judgment', 'Hindi-Moral_Judgment.csv') #Update to input file: Language-Category
-    output_file = os.path.join('LLMEvals', 'Llama', 'Hindi-Moral_Judgment-Evaluations-Llama.csv') #Update to output file: Language-Category-Evaluations-LLM
+    output_file = os.path.join('LLMEvals', 'Hindi-Moral_Judgment-Evaluations.csv') #Update to output file: Language-Category-Evaluations-LLM
     rubric_path = os.path.join('Rubrics', 'Moral_Judgement-Rubric.csv')  # Update this to your rubric file path
     
     # Load questions (English and translated language)
