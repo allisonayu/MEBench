@@ -37,6 +37,3 @@ To run:
 1. Make sure you are on the main_env (if not, deactivate any currently running environments and activate main_env)
 2. Run the main script: python run_all.py
 3. If the script is not compatible, run ResOnly.py and EvalsResponse.py
-
-## Citation
-asldkfjskf
